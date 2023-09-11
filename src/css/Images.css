@@ -1,0 +1,25 @@
+.image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .nav .banner {
+    background-color: transparent;
+    border-radius: 50px;
+    height: 75px;
+    width: 100px;
+}
+
+.nav .banner:hover {
+    background-color: transparent;
+    border: none; 
+}
+
+.discord-icon {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+  }
