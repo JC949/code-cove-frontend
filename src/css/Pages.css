@@ -1,7 +1,17 @@
+.body {
+  background-color: azure;
+}
+
 .title {
-    font-size: 75px;
-    text-align: center;
+    font-size: 3vw;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-left: 21%; 
 }
 
 .signinform {
@@ -12,9 +22,57 @@
     text-align: center;
     width: 50%;
     padding: 10px;
+    margin-top: 800px;
 }
 
 .signedin {
     text-align: center;
+    margin-top: 30px;
 }
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 750px;
+  }
   
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+  }
+    
+  .returnlink {
+    text-align: center;
+  }
+
+  .getstartedbtn {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 25%;
+    background-color: azure;
+  }
+
+  .getstartedbtn:hover {
+    background-color:darkturquoise;
+  }
+
+  .landing-page {
+    background-image: url('/path/to/your-background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This ensures the background remains fixed while scrolling */
+  }
+  
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
