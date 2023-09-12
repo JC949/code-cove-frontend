@@ -4,7 +4,7 @@
 
 .title {
     font-size: 3vw;
-    font-family: 'Courier New', Courier, monospace;
+    font-style: Helvetica;
 }
 
 .title-container {
@@ -17,7 +17,7 @@
 .signinform {
     position: absolute;
     top: 75%;
-    left: 60%;
+    left: 63%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 50%;
@@ -35,7 +35,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #333;
+    background-color: #012068;
     color: white;
     padding: 1rem 0;
     margin-top: 750px;
@@ -59,14 +59,16 @@
   }
 
   .getstartedbtn:hover {
-    background-color:darkturquoise;
+    background-color:#012068;
+    color:white;
+    cursor: pointer;
   }
 
   .landing-page {
-    background-image: url('/path/to/your-background-image.jpg');
+    background-image: url('C:\Users\jacob\Development\Projects\Visual Studio Code\Code Cove\CodeCoveLandingPageWireframe.pdf');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* This ensures the background remains fixed while scrolling */
+    background-attachment: fixed; 
   }
   
 

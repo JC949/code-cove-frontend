@@ -1,75 +1,68 @@
-* {
-    box-sizing: border-box;
+/* NavBar.css */
+
+.header {
+  position: relative;
+  background-image: url('/public/img/codecoveheader.jpg'); /* Corrected image path */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  height: 83px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
 }
 
-body {
-    margin: 0;
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+  position: absolute; 
+  right: 0; 
+  text-decoration: white;
 }
 
-.container { 
-    margin: 1rem;
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-.nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+.nav-links li {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  
 }
 
-.nav .banner {
-    background-color: transparent;
-    border-radius: 50px;
-    height: 75px;
-    width: 100px;
+.nav-links a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 0 50px; /* Adjust the spacing between links */
+  font-size: 30px;
+  font-display: bold;
+  
 }
 
-.nav .banner:hover {
-    background-color: transparent;
-    border: none; 
+.nav-links a:hover {
+  background-color: white;
+  color: #012068;
+  border: 2px solid;
+  border-color: #012068;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    align-items: center; 
+.discord-link img {
+  background-color: transparent;
+  width: auto; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-}
 
-.site-title {
-    font-size: 2rem;
-}
 
-.nav li:hover {
-    background-color: #777;
-}
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center; /* Center-align text */
-  }
-
-  .nav ul {
-    flex-direction: column; /* Stack list items vertically */
-    gap: 0.5rem; /* Add spacing between items */
-  }
-
-  .nav .banner {
-    margin-right: 0; /* Remove right margin */
-  }
-}

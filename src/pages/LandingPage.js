@@ -50,13 +50,12 @@ const scrollToBottom = () => {
 
   return (
     <>
+    <div className="landingpage">
     <div className="title-container">
       
       <h1 className="title">Learn to code. </h1>
       <h1 className="title">Test your skills. </h1>
       <h1 className="title">Enjoy the process. </h1>
-
-      <embed src="C:\Users\jacob\Development\Projects\Visual Studio Code\Code Cove\CodeCoveLandingPageWireframe.pdf" type="application/pdf" width="100%" height="5000px" />
 
       {isUserSignedIn ? (
         // User is already signed in, you can display a different message or redirect here
@@ -86,7 +85,7 @@ const scrollToBottom = () => {
       <div id="returnlink" class="returnlink">
     <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">Return to Top</a>
   </div>
-
+</div>
     </>
   );
 }

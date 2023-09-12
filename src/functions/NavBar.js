@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import '../css/NavBar.css';
 import '../css/Images.css';
 import CustomUserButton from './CustomUserButton';
@@ -6,6 +7,8 @@ import { useClerk } from '@clerk/clerk-react'; // Import the useClerk hook
 
 function NavBar() {
   const { user } = useClerk(); // Access the user object from Clerk
+
+  const discordIconRef = useRef(null);
 
   const scrollToSignInForm = () => {
     const signInForm = document.getElementById("sign-in-form");
@@ -20,26 +23,53 @@ function NavBar() {
     }
   };
 
+  const handleMouseEnter = () => {
+    discordIconRef.current.src = './img/bluediscordicon.png';
+  };
+
+  const handleMouseLeave = () => {
+    discordIconRef.current.src = './img/whitediscordicon.png';
+  };
+
   return (
-    <nav className="nav">
-      <a href="/"> <img className="banner" src="./img/bluebanner.png" alt="Code Cove"></img> </a>
-      <ul>
-        <CustomLink href="/courses">Explore Courses</CustomLink>
-        {/* Conditionally render the "Log In" option */}
-        {!user ? (
+    <a href="/">
+    <header className="header">
+      <nav className="nav-links">
+        <ul>
           <li>
-            <a href="/#sign-in-form" onClick={scrollToSignInForm}>Log In</a>
+            <CustomLink href="/courses">Explore Courses</CustomLink>
           </li>
-        ) : null}
-        <li>
-          <a href="https://discord.gg/bCBwp9qm"> <img className='discord-icon' src="./img/whitediscordicon.png" alt="Join the Discord"></img></a>
-        </li>
-        <li>
-          <CustomUserButton />
-        </li>
-      </ul>
-    </nav>
+          {!user ? (
+            <li>
+              <a href="/#sign-in-form" onClick={scrollToSignInForm}>Log In</a>
+            </li>
+          ) : null}
+  <a
+    className="discord-link"
+    href="https://discord.gg/bCBwp9qm"
+    onMouseEnter={() => handleMouseEnter()}
+    onMouseLeave={() => handleMouseLeave()}
+  >
+    <img
+      className='discord-icon'
+      ref={discordIconRef}
+      src="./img/whitediscordicon.png"
+      alt="Join the Discord"
+    />
+  </a>
+
+          {user && (
+            <li>
+              <CustomUserButton />
+            </li>
+          )}
+        </ul>
+      </nav>
+    </header>
+    </a>
+
   );
 }
+
 
 export default NavBar;
