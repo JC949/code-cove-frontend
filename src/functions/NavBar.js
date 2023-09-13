@@ -32,8 +32,9 @@ function NavBar() {
   };
 
   return (
-    <a href="/">
     <header className="header">
+        <a href="/" className="header-logo"><img src="/img/whitewave.png" alt="Code Cove"></img></a>
+        <a href="/" className="header-title">CodeCove</a>
       <nav className="nav-links">
         <ul>
           <li>
@@ -59,15 +60,13 @@ function NavBar() {
   </a>
 
           {user && (
-            <li>
+            <li className='userbutton'>
               <CustomUserButton />
             </li>
           )}
         </ul>
       </nav>
     </header>
-    </a>
-
   );
 }
 

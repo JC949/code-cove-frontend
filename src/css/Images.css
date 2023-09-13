@@ -36,7 +36,7 @@
     border: 3px solid #333;
     margin-top: 10px;
   }
-  
+
   /* Media query for adjusting padding at different screen sizes */
   @media (max-width: 768px) {
     .homeimg {

@@ -2,49 +2,80 @@
 
 .header {
   position: relative;
-  background-image: url('/public/img/codecoveheader.jpg'); /* Corrected image path */
-  background-size: cover; 
-  background-repeat: no-repeat; 
+  background-image: url('/public/img/codecoveheaderblank.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 83px;
   width: 100%;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
+}
+
+.header-logo {
+  margin-right: 1%; 
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.header-title {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-display: bold;
+  margin-right: 87%; 
+  font-family: Helvetica;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  padding: 10px 20px; 
-  position: absolute; 
-  right: 0; 
-  text-decoration: white;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  height: 35px;
 }
-
 
 .nav-links ul {
   list-style: none;
   display: flex;
   align-items: center;
+  height: 35px;
 }
 
 .nav-links li {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  
+  height: 35px;
 }
 
 .nav-links a {
   color: white;
   background-color: transparent;
   text-decoration: none;
-  margin: 0 50px; /* Adjust the spacing between links */
+  margin: 0 40px; /* adjust spacing between nav links here */
   font-size: 30px;
   font-display: bold;
-  
+  align-items: center;
+}
+
+.discord-link img {
+  background-color: transparent;
+  width: auto;
+  height: 35px;
+  margin-top: 4px;
+}
+
+.nav-links a img:hover {
+  border: none;
 }
 
 .nav-links a:hover {
@@ -57,12 +88,17 @@
   align-items: center;
 }
 
-.discord-link img {
-  background-color: transparent;
-  width: auto; /* Adjust the size as needed */
-  height: 35px; /* Adjust the size as needed */
+.userbutton {
+  height: 35px;
+  width: auto;
 }
 
-
-
-
+.userbutton:hover {
+  background-color: transparent;
+  color: #012068;
+  border: 2px solid;
+  border-color: #012068;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}

@@ -27,7 +27,7 @@ function LandingPage() {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === imageUrls.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // 5000 milliseconds (5 seconds)
+    }, 3000); // 3000 milliseconds (3 seconds)
 
     // Clear the interval when the component unmounts
     return () => clearInterval(interval);
