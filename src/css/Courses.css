@@ -1,0 +1,56 @@
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8%;
+    height: 100%;
+}
+
+.course-name {
+    font-size: 50px;
+    font-family: Helvetica;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-desc {
+    font-size: 40px;
+    font-family: Helvetica;
+    margin-top: 1px;
+}
+
+.course-diff {
+    font-size: 30px;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.course-btn {
+    font-size: 30px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.course-redirect {
+    font-size: 30px;
+    font-family: Helvetica;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-redirect-link {
+    font-family: Helvetica;
+    cursor: pointer;
+    color: #1c9cbc;
+    border-color: white;
+}
+
+.course-btn:hover {
+    font-family: Helvetica;
+    cursor: pointer;
+    background-color: #1c9cbc;
+    color: white;
+    border-color: white;
+}

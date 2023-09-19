@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import CoursesPage from "./pages/CoursesPage";
 import LandingPage from "./pages/LandingPage";
 import AuthenticationPage from "./pages/AuthenticationPage";
-import CourseDetailsPage from "./components/CourseDetailsPage";
+import CourseDetailsPage from "./pages/CourseDetailsPage";
 import { ClerkProvider } from "@clerk/clerk-react";
 
 

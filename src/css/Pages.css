@@ -9,6 +9,7 @@ html, body {
 .title {
     font-size: 3vw;
     font-style: Helvetica;
+    font-weight: bold;
 }
 
 .title-container {
@@ -89,13 +90,17 @@ html, body {
     margin-top: 5px;
     margin-left: 42%;
     background-color: azure;
+    font-family: Helvetica;
+    font-weight: bold;
     text-decoration: none;
   }
 
   .getstartedbtn:hover {
+    font-family: Helvetica;
     cursor: pointer;
     background-color: #1c9cbc;
     color:white;
+    border-color:white;
   }
 
   .landing-page {
@@ -112,7 +117,14 @@ html, body {
     justify-content: center;
     margin-left: 40%;
   }
-  
+
+  .sign-in-link {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1c9cbc;
+    font-size: 16px;
+  }
+
 
   @media screen and (prefers-reduced-motion: no-preference) {
     html {
