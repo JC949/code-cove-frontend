@@ -1,5 +1,9 @@
-.body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: azure;
+  overflow-x: hidden;
 }
 
 .title {
@@ -16,13 +20,12 @@
 
 .signinform {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 63%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 50%;
     padding: 10px;
-    margin-top: 800px;
 }
 
 .signedin {
@@ -31,14 +34,44 @@
 }
 
 .footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: #012068;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: Helvetica;  
+  background-image: url('/public/img/codecoveheaderblank.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -9px;
+  padding: 0 20px;
+  bottom: 0;
+  }
+
+  .loginpagefooter {
     color: white;
-    padding: 1rem 0;
-    margin-top: 750px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    font-family: Helvetica;  
+    background-image: url('/public/img/codecoveheaderblank.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -9px;
+    margin-top: 757px;
+    padding: 0 20px;
+    bottom: 0;
   }
   
   .container {
@@ -54,14 +87,15 @@
     font-size: 2vw;
     text-align: center;
     margin-top: 5px;
-    margin-left: 25%;
+    margin-left: 42%;
     background-color: azure;
+    text-decoration: none;
   }
 
   .getstartedbtn:hover {
-    background-color:#012068;
-    color:white;
     cursor: pointer;
+    background-color: #1c9cbc;
+    color:white;
   }
 
   .landing-page {
@@ -69,6 +103,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+  }
+
+  .coursestitle {
+    font-family: Helvetica;
+    font-size: 38px;
+    align-content: center;
+    justify-content: center;
+    margin-left: 40%;
   }
   
 

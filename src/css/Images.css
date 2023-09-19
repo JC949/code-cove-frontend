@@ -7,34 +7,15 @@
     height: auto;
   }
   
-  .nav .banner {
-    background-color: transparent;
-    border-radius: 50px;
-    height: 75px;
-    width: 100px;
-  }
-  
-  .nav .banner:hover {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .discord-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
   .homeimg {
     margin-left: 20%;
     display: flex;
-    align-items: flex-start; 
     padding: 1rem;
   }
   
   .homeimg img {
-    max-width: 100%;
     border: 3px solid #333;
-    margin-top: 10px;
+    margin-top: 3%;
   }
 
   /* Media query for adjusting padding at different screen sizes */
