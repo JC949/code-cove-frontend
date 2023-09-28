@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -8px;
+  margin-top: -6px;
   margin-left: -9px;
   padding: 0 20px;
 }
@@ -25,6 +25,7 @@
   font-size: 30px;
   font-weight: bold;
   margin-left: 5px;
+  margin-top: 5px;
   font-family: Helvetica;
 }
 
@@ -47,6 +48,7 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  margin-top: 4px;
 }
 
 .nav-links ul {

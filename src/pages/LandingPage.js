@@ -33,7 +33,6 @@ function ViewCoursesButton() {
   );
 }
 
-
 const imageUrls = [
   '/img/homeimg1.jpg',
   '/img/homeimg2.jpg',

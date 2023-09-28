@@ -6,9 +6,8 @@ function CustomUserButton() {
 
   const handleSignOut = async () => {
     try {
-      // Sign out the user using Clerk's signOut method
       await signOut({
-        redirectTo: 'http://localhost:3000', // Replace with your desired URL
+        redirectTo: 'http://localhost:3000', 
       });
     } catch (error) {
       console.error('Error signing out:', error);

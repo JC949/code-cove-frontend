@@ -21,12 +21,11 @@ const CourseDetailsPage = () => {
         <p className="course-diff">Difficulty: {course.difficulty}</p>
         <button className="course-btn">
         <Link to={`/course/${course.id}`}></Link>
+        <p className='returntocourses'><Link className="course-redirect-link" to="/courses">Return to Courses</Link></p>
           Begin tutorial</button>
       </div>
     ) : (
-      <>
-        <p className='course-redirect'>Please <Link className="course-redirect-link" to="/login">Sign In</Link> to view this course.</p>
-      </>
+        <p className='course-redirect'>Please <Link className="course-redirect-link" to="/login">Sign In</Link> to view course details.</p>
     )
   );
 }

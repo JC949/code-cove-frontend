@@ -17,17 +17,18 @@
 .course-desc {
     font-size: 40px;
     font-family: Helvetica;
-    margin-top: 1px;
+    margin-top: 1%;
 }
 
 .course-diff {
-    font-size: 30px;
+    font-size: 20px;
     font-family: Helvetica;
     font-weight: bold;
-    margin-top: 1px;
+    margin-top: 1%;
 }
 
 .course-btn {
+    margin-top: 1%;
     font-size: 30px;
     font-family: Helvetica;
     font-weight: bold;
@@ -35,6 +36,8 @@
 
 .course-redirect {
     font-size: 30px;
+    margin-left: 35%;
+    margin-top: 5%;
     font-family: Helvetica;
     align-items: center;
     justify-content: center;
@@ -52,5 +55,66 @@
     cursor: pointer;
     background-color: #1c9cbc;
     color: white;
-    border-color: white;
+    border-color: black;
 }
+
+.returntocourses {
+    font-family: Helvetica;
+    cursor: pointer;
+    color: white;
+    border-color: white;
+    margin-left: 40%;
+    font-size: 24px;
+}
+
+.course-container {
+    background-color: #E8FDFF; /* Set a background color for cards */
+    border: 2px solid #1c9cbc; /* Add a border for cards */
+    padding: 20px;
+    margin-left: 0%;
+    border-radius: 5px; /* Round the corners of cards */
+    text-decoration: none;
+    color: inherit;
+  }
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 25px;
+    text-decoration: none;
+  }
+  
+  .course-card {
+    background-color: #E8FDFF; /* Set a background color for cards */
+    border: 2px solid #1c9cbc; /* Add a border for cards */
+    padding: 20px;
+    border-radius: 5px; /* Round the corners of cards */
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .course-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle hover effect */
+    transform: scale(1.02); /* Enlarge the card on hover */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .course-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .course-desc {
+    font-size: 1rem;
+    justify-content: center;
+}
+  
+  .course-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
