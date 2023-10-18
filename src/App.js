@@ -24,7 +24,6 @@ const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
     <ClerkProvider publishableKey={clerkPubKey}>
 
     <NavBar />
-
     <Routes>
       <Route path ="/" element = {<LandingPage />} />
       <Route path ="/courses" element = {<CoursesPage />} />

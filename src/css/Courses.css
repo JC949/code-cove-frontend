@@ -28,10 +28,24 @@
 }
 
 .course-btn {
-    margin-top: 1%;
-    font-size: 30px;
-    font-family: Helvetica;
-    font-weight: bold;
+  margin-top: 1%;
+  font-size: 30px;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  display: inline-block; /* Ensure the button takes up the full width */
+  background-color: white; /* Set the default background color */
+  color: #1c9cbc !important; /* Set the default text color and use !important to override other styles */
+  border: none; /* Remove any default button borders */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.course-btn:hover {
+  background-color: #1c9cbc !important; /* Set the hover background color and use !important to override other styles */
+  color: white !important; /* Set the hover text color and use !important to override other styles */
+  text-decoration: none !important; /* Remove underlines from text on hover */
+  border: none !important; /* Remove any button borders on hover */
 }
 
 .course-redirect {
@@ -48,14 +62,6 @@
     cursor: pointer;
     color: #1c9cbc;
     border-color: white;
-}
-
-.course-btn:hover {
-    font-family: Helvetica;
-    cursor: pointer;
-    background-color: #1c9cbc;
-    color: white;
-    border-color: black;
 }
 
 .returntocourses {
