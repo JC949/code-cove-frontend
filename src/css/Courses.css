@@ -28,28 +28,29 @@
 }
 
 .course-btn {
-  font-size: 2vw;
+  margin-top: 1%;
+  font-size: 30px;
   text-align: center;
-  margin-top: 5px;
-  margin-left: 42%;
   background-color: azure;
   font-family: Helvetica;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: none !important;
+  padding: 10px 20px; 
+  display: inline-block; 
 }
 
 .course-btn:hover {
   font-family: Helvetica;
   cursor: pointer;
-  background-color: #1c9cbc;
-  color:white;
+  background-color: #5ed2ef;
   border-color:black;
+  cursor: pointer; /* Change cursor when hovering */
 }
 
 .course-redirect {
-    font-size: 30px;
-    margin-left: 35%;
-    margin-top: 5%;
+    font-size: 35px;
+    margin-left: 20%;
+    margin-top: 3%;
     font-family: Helvetica;
     align-items: center;
     justify-content: center;
@@ -57,6 +58,7 @@
 
 .course-redirect-link {
     font-family: Helvetica;
+    font-weight: bold;
     cursor: pointer;
     color: #1c9cbc;
     border-color: white;
@@ -91,17 +93,17 @@
   }
   
   .course-card {
-    background-color: #E8FDFF; /* Set a background color for cards */
-    border: 2px solid #1c9cbc; /* Add a border for cards */
+    background-color: #E8FDFF; 
+    border: 2px solid #1c9cbc; 
     padding: 20px;
-    border-radius: 5px; /* Round the corners of cards */
+    border-radius: 5px; 
     text-decoration: none;
     color: inherit;
   }
   
   .course-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle hover effect */
-    transform: scale(1.02); /* Enlarge the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds hover effect */
+    transform: scale(1.02); /* Enlarges the card on hover */
     transition: transform 0.3s, box-shadow 0.3s;
   }
   

@@ -98,7 +98,7 @@ html, body {
   .getstartedbtn:hover {
     font-family: Helvetica;
     cursor: pointer;
-    background-color: #1c9cbc;
+    background-color: #3fadc9;
     color:white;
     border-color:black;
   }

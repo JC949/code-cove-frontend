@@ -51,7 +51,6 @@ function LandingPage() {
       );
     }, 3000); // 3000 milliseconds (3 seconds)
 
-    // Clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
