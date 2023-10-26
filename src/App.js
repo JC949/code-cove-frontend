@@ -11,10 +11,15 @@ import { ClerkProvider } from "@clerk/clerk-react";
 // App function returns NavBar, BrowserRouter and ClerkProviderWithRoutes functions
 function App() {
 
+  if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
+    throw new Error("Missing Publishable Key");
+  }
+
+  const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
   return (
     <>
-    <ClerkProvider>
+    <ClerkProvider publishableKey={clerkPubKey}>
 
     <NavBar />
     <Routes>
