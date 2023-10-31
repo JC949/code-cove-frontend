@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 // Change to proper url when deployed to cloud
-const studentS_REST_API_URL = 'http://localhost:8080/api/students';
+const INSTRUCTORS_REST_API_URL = 'http://localhost:8080/api/instructors';
 
-export const getstudents = async () => {
+export const getInstructors = async () => {
     try {
-      const response = await axios.get(`${studentS_REST_API_URL}/students`);
+      const response = await axios.get(`${INSTRUCTORS_REST_API_URL}/instructors`);
   
       // Return the response data
       return response.data;

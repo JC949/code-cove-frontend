@@ -1,16 +1,17 @@
 import React from 'react';
-import StudentService from '../services/StudentService';
+import getStudents from '../services/StudentService';
 
 // Component to receive a response for each student and display their usernames
 class StudentComponent extends React.Component {
-    constructor() {
+    constructor(props) {
+        super(props)
         this.state = {
             students:[]
         }
     }
 
     componentDidMount() {
-        StudentService.getUsers().then((response) => {
+        getStudents().then((response) => {
             this.setState({students: response.data})
         });
     }
