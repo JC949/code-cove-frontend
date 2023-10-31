@@ -1,16 +1,16 @@
 import React from 'react';
 import { SignIn } from '@clerk/clerk-react';
-import Footer from "../components/Copyright";
+import '../css/Pages.css';
+import CommonLayout from '../components/CommonLayout';
 
+// Contains clerk sign in form authentication
 function AuthenticationPage() {
   return (
     <>
-    <div className="signinform">
-      <SignIn />
-    </div>
-    <div className='loginpagefooter'>
-      <Footer />
-    </div>
+      <CommonLayout />
+        <div className="signinform">
+          <SignIn />
+        </div>
     </>
   );
 }
