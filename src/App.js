@@ -5,7 +5,6 @@ import LandingPage from "./pages/LandingPage";
 import AuthenticationPage from "./pages/AuthenticationPage";
 import CourseDetailsPage from "./pages/CourseDetailsPage";
 import { ClerkProvider } from "@clerk/clerk-react";
-import StudentComponent from "./components/StudentComponent";
 
 /* Define pub key in variable, make sure clerk provider is called in App.js
 so we can use clerk features throughout app without needing to re call */
@@ -17,8 +16,8 @@ function App() {
   const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
   return (
+    <>
     <ClerkProvider publishableKey={clerkPubKey}>
-      <StudentComponent />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/courses" element={<CoursesPage />} />
@@ -26,6 +25,7 @@ function App() {
         <Route path="/login" element={<AuthenticationPage />} />
       </Routes>
     </ClerkProvider>
+    </>
   );
 }
 
