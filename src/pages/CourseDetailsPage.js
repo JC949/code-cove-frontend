@@ -3,14 +3,23 @@ import { useParams, Link } from 'react-router-dom';
 import courses from '../data/CoursesData';
 import { useClerk, SignedOut } from '@clerk/clerk-react';
 import '../css/Courses.css';
+import NavBar from '../components/NavBar';
 
+// Display individual courses by parsing through the list of all courses
 const CourseDetailsPage = () => {
   const { courseId } = useParams();
   const course = courses.find((c) => c.id === parseInt(courseId));
   const { user } = useClerk();
+
+  /* Add future logic to handle button color changes 
+  depending on tutorial status */ 
   const hasTutorial = true;
 
+  /* If user is signed in display course details, if not 
+  prompt to redirect to sign in page */
   return (
+    <>
+    <NavBar />
     <div className="course-container">
       <SignedOut>
         <p className="course-redirect">
@@ -31,7 +40,7 @@ const CourseDetailsPage = () => {
             </button>
           ) : (
             <p>No tutorial available for this course</p>
-          )}
+            )}
           <p className="returntocourses">
             <Link className="course-redirect-link" to="/courses">
               Return to Courses
@@ -40,6 +49,7 @@ const CourseDetailsPage = () => {
         </>
       )}
     </div>
+      </>
   );
 };
 
