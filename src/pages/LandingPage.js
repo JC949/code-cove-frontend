@@ -15,25 +15,25 @@ function Title() {
   );
 }
 
-function About() {
-  return (
-    <section id="about-text">
-    <div className="about-container">
-      <h1 className="about">About us.</h1>
-    </div>
-    </section>
-  );
-}
+// function About() {
+//   return (
+//     <section id="about-text">
+//     <div className="about-container">
+//       <h1 className="about">About us.</h1>
+//     </div>
+//     </section>
+//   );
+// }
 
-function Contact() {
-  return (
-    <section id="contact-text">
-    <div className="contact-container">
-      <h1 className="contact">Contact us.</h1>
-    </div>
-    </section>
-  );
-}
+// function Contact() {
+//   return (
+//     <section id="contact-text">
+//     <div className="contact-container">
+//       <h1 className="contact">Contact us.</h1>
+//     </div>
+//     </section>
+//   );
+// }
 
 function JoinButton() {
   return (
@@ -100,16 +100,12 @@ function LandingPage() {
         <Title />
         <ViewCoursesButton />
         <RotatingImages />
-        <About />
-        <Contact />
         </>
       ) : (
         <>
           <Title />
           <JoinButton />
           <RotatingImages />
-          <About />
-          <Contact />
         </>
       )}
 
