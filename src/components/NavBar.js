@@ -1,4 +1,3 @@
-// NavBar.js
 import React, { useRef } from 'react';
 import '../css/NavBar.css';
 import '../css/Images.css';
@@ -7,18 +6,10 @@ import CustomLink from './CustomLink';
 import { useClerk } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 
-
+// Component to display a nav bar
 function NavBar() {
   const { user } = useClerk();
   const discordIconRef = useRef(null);
-
-  const handleMouseEnter = () => {
-    discordIconRef.current.src = './img/bluediscordicon.png';
-  };
-
-  const handleMouseLeave = () => {
-    discordIconRef.current.src = './img/whitediscordicon.png';
-  };
 
   return (
     <header className="header">
@@ -39,18 +30,16 @@ function NavBar() {
           <a
             className="discord-link"
             href="https://discord.gg/bCBwp9qm"
-            onMouseEnter={() => handleMouseEnter()}
-            onMouseLeave={() => handleMouseLeave()}
           >
             <img
-              className='discord-icon'
+              className="discord-icon"
               ref={discordIconRef}
-              src="./img/whitediscordicon.png"
-              alt="Join the Discord"
+              src='/img/whitediscordicon.png'
+              alt="Discord"
             />
           </a>
           {user && (
-            <li className='userbutton'>
+            <li className="userbutton">
               <CustomUserButton />
             </li>
           )}

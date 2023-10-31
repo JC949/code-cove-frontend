@@ -1,3 +1,4 @@
+// Component for implementing custom links
 function CustomLink({ href, children, ...props }) {
     const path = window.location.pathname;
   

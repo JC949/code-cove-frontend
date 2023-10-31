@@ -10,6 +10,9 @@ html, body {
     font-size: 3vw;
     font-style: Helvetica;
     font-weight: bold;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    padding: 0 10px;
 }
 
 .title-container {
@@ -47,7 +50,7 @@ html, body {
   height: 100px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-left: -9px;
   padding: 0 20px;
@@ -74,11 +77,6 @@ html, body {
     padding: 0 20px;
     bottom: 0;
   }
-  
-  .container {
-    max-width: 1200px; 
-    margin: 0 auto;
-  }
     
   .returnlink {
     text-align: center;
@@ -87,7 +85,7 @@ html, body {
   .getstartedbtn {
     font-size: 2vw;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 3%;
     margin-left: 42%;
     background-color: azure;
     font-family: Helvetica;
@@ -98,8 +96,7 @@ html, body {
   .getstartedbtn:hover {
     font-family: Helvetica;
     cursor: pointer;
-    background-color: #3fadc9;
-    color:white;
+    background-color: #b0e3f0;
     border-color:black;
   }
 
@@ -124,6 +121,14 @@ html, body {
     font-size: 16px;
   }
 
+  .authentication-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+    height: 100%; 
+  }
 
   @media screen and (prefers-reduced-motion: no-preference) {
     html {

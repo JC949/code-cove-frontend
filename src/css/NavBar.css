@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  position: fixed;
   background-image: url('/public/img/codecoveheaderblank.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,48 +66,97 @@
 }
 
 .nav-links a {
-  color: white;
+  color: #54b3d6;
   display: flex;
   background-color: transparent;
   text-decoration: none;
-  margin: 0 20px; /* Adjust spacing between nav links here */
+  margin: 0 25px;
   font-size: 30px;
   font-weight: bold;
   align-items: center;
+  /* Cool css effect for hovering links */
+  background-image: linear-gradient(
+    to right,
+    black,
+    black 50%,
+    white 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
-.discord-link img {
-  background-color: transparent;
-  width: auto;
-  height: 35px;
-  margin-top: 4px;
-}
-
-.nav-links a img:hover {
-  border: none;
+.nav-links a:before {
+  content: '';
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
 }
 
 .nav-links a:hover {
-  background-color: white;
-  color: #1c9cbc;
-  border: 2px solid;
-  border-color: #1c9cbc;
-  transition: 0.3s;
+  background-position: 0;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.discord-link {
+  color: white;
+  text-decoration: none;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.discord-icon {
+  width: 40px;
+  height: 35px;
+  margin-top: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.discord-link:hover .discord-icon {
+  filter: grayscale(0);
+  animation: shake 0.7s;
 }
 
 .userbutton {
+  width: 40px;
   height: 35px;
-  width: auto;
-}
-
-.userbutton:hover {
-  background-color: transparent;
-  color: #1c9cbc;
-  border: 2px solid;
-  border-color: #1c9cbc;
-  transition: 0.3s;
+  color: white;
+  text-decoration: none;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.userbutton :hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  border: 2px;
+  border-color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Css to shake icons when hovering */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, 0); }
+  40% { transform: translate(2px, 0); }
+  60% { transform: translate(-2px, 0); }
+  80% { transform: translate(2px, 0); }
+  100% { transform: translate(0, 0); }
 }
