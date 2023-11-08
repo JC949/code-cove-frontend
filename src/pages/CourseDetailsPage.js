@@ -10,7 +10,10 @@ const CourseDetailsPage = () => {
   const course = courses.find((c) => c.id === parseInt(courseId));
   const { user } = useClerk();
   
-  const authorized = user.authorized; // Store the user role (1 = student, 2 = instructor, 3 = admin)
+  // Check if user is authenticated and has the 'authorized' property
+  const authorized = user && user.authorized;
+  
+  console.log('User Role:', user.role);          
 
   return (
     <>
@@ -35,10 +38,17 @@ const CourseDetailsPage = () => {
               </button>
             ) : (
               <button className="course-tutorial-btn">
-                <a className="tutorial-link" href="https://www.w3schools.com/" target="_blank">
+              {authorized === 2 || user.role === 'Instructor' ? (
+                <Link to={`/course/${course.id}`}>Create Tutorial</Link>
+              ) : (
+                
+                <a className="tutorial-link" href="https://www.w3schools.com/">
                   Begin Tutorial
                 </a>
-              </button>
+                
+              )}
+            </button>
+            
             )}
             <p className="returntocourses">
               <Link className="course-redirect-link" to="/courses">

@@ -1,3 +1,4 @@
+// JSON format for hardcoded course properties
 const Courses = [
   {
     id: 1,
