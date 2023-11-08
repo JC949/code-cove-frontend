@@ -13,7 +13,7 @@
 }
 
 .course-details-name {
-  font-size: 36px; /* Reduce font size */
+  font-size: 36px; 
   padding-top: 20px;
   font-family: Helvetica;
   font-weight: bold;
@@ -25,37 +25,27 @@
 .course-details-desc {
   font-size: 20px;
   font-family: Helvetica;
-  margin-top: 10px; /* Adjust margin */
+  margin-top: 10px; 
 }
 
 .course-details-diff {
   font-size: 20px;
   font-family: Helvetica;
   font-weight: bold;
-  margin-top: 10px; /* Adjust margin */
-}
-
-.course-tutorial-btn {
-  font-size: 2vw;
-  background-color: azure;
-  font-family: Helvetica;
-  font-weight: bold;
-  text-decoration: none !important;
-}
-
-.course-tutorial-btn:hover {
-  font-family: Helvetica;
-  cursor: pointer;
-  background-color: #b0e3f0;
-  border-color:black;
+  margin-top: 10px; 
 }
 
 .tutorial-link {
   text-decoration: none;
-  color: black;
+  color:#1c9cbc
 }
 
-.course-btn {
+.tutorial-link:hover {
+  text-decoration: none;
+}
+
+.course-tutorial-btn {
+  color: black;
   margin-top: 1%;
   font-size: 30px;
   text-align: center;
@@ -63,16 +53,23 @@
   font-family: Helvetica;
   font-weight: bold;
   text-decoration: none !important;
-  padding: 10px 20px; 
-  display: inline-block; 
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border: 3px solid black; 
 }
 
-.course-btn:hover {
+.course-tutorial-btn:hover {
   font-family: Helvetica;
+  color: #aeeaf3; 
   cursor: pointer;
-  background-color: #5ed2ef;
-  border-color:black;
-  cursor: pointer; /* Change cursor when hovering */
+  background-color: black; 
+  border-color: #aeeaf3; 
+  transition: all 0.3s ease-in-out;
+}
+
+.course-tutorial-btn:hover::before {
+  width: 100%;
 }
 
 .course-redirect {
