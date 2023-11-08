@@ -24,7 +24,7 @@ const CoursesPage = () => {
   // Create a set to store unique course IDs
   const uniqueCourseIds = new Set();
   // Filter out duplicate courses by checking the unique ID
-  const deduplicatedCourses = filteredCourses.filter((course) => {
+  const duplicatedCourses = filteredCourses.filter((course) => {
     if (!uniqueCourseIds.has(course.id)) {
       uniqueCourseIds.add(course.id);
       return true;
@@ -47,7 +47,7 @@ const CoursesPage = () => {
       </div>
 
       <div className="courses-container">
-        {deduplicatedCourses.map((course) => (
+        {duplicatedCourses.map((course) => (
           <Link to={`/courses/${course.id}`} className="course-card" key={course.id}>
             <h2 className="course-name">{course.name}</h2>
             <p className="course-desc">{course.description}</p>

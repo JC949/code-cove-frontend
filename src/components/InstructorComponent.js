@@ -1,7 +1,7 @@
 import React from 'react';
 import getInstructors from '../services/InstructorService';
 
-// Component to receive a response for each Instructor and display their usernames
+// Receive a response from services folder for each Instructor and display their usernames
 class InstructorComponent extends React.Component {
     constructor(props) {
         super(props)

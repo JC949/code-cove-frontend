@@ -45,7 +45,7 @@ function JoinButton() {
   );
 }
 
-/* Logic to swap images in img array every 3000 milliseconds 
+/* Logic to swap images in img array every 3 seconds 
 This happens by checking if the index of prevIndex is equal to the
 last index of the imageURLs then reset it to 0 */
 function RotatingImages() {

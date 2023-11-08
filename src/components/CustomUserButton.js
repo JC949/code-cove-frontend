@@ -1,6 +1,7 @@
 import React from 'react';
 import { useClerk, UserButton } from '@clerk/clerk-react';
 
+// Component for adding custom logic to clerk user button component
 function CustomUserButton() {
   const { user } = useClerk();
 
