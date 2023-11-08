@@ -1,10 +1,19 @@
-html, body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: azure;
   overflow-x: hidden;
 }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url("https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
 
 .title {
     font-size: 3vw;
@@ -20,7 +29,9 @@ html, body {
   flex-direction: column;
   align-items: flex-start; 
   margin-left: 21%; 
+  font-weight: bold;
 }
+
 
 .signinform {
     position: absolute;
@@ -81,25 +92,34 @@ html, body {
   .returnlink {
     text-align: center;
   }
-
+  
   .getstartedbtn {
     font-size: 2vw;
     text-align: center;
     margin-top: 3%;
     margin-left: 42%;
-    background-color: azure;
     font-family: Helvetica;
     font-weight: bold;
     text-decoration: none;
+    border: 3px solid black; 
+    color: black; 
+    padding: 10px 20px; 
+    transition: all 0.3s ease-in-out;
+    position: relative;
   }
-
+  
   .getstartedbtn:hover {
-    font-family: Helvetica;
+    color: #aeeaf3;
+    border-color: #aeeaf3; 
     cursor: pointer;
-    background-color: #b0e3f0;
-    border-color:black;
+    background-position: 0;
+    background-color: black;
   }
-
+  
+  .getstartedbtn:hover::before {
+    width: 100%;
+  }
+  
   .landing-page {
     background-size: cover;
     background-repeat: no-repeat;

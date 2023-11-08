@@ -91,7 +91,7 @@
 
 .nav-links a:before {
   content: '';
-  background: white;
+  background: #aeeaf3;
   display: block;
   position: absolute;
   bottom: -3px;
