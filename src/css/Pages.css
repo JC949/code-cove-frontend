@@ -14,38 +14,36 @@ body {
   background-image: url("https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-
 .title {
-    font-size: 3vw;
-    font-style: Helvetica;
-    font-weight: bold;
-    margin-top: 8%;
-    margin-bottom: 2%;
-    padding: 0 10px;
+  font-size: 3vw;
+  font-style: Helvetica;
+  font-weight: bold;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  padding: 0 10px;
 }
 
 .title-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  margin-left: 21%; 
+  align-items: flex-start;
+  margin-left: 21%;
   font-weight: bold;
 }
 
-
 .signinform {
-    position: absolute;
-    top: 50%;
-    left: 63%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 50%;
-    padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+  padding: 10px;
 }
 
 .signedin {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .footer {
@@ -53,7 +51,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-left: 5px;
-  font-family: Helvetica;  
+  font-family: Helvetica;
   background-image: url('/public/img/codecoveheaderblank.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,93 +64,326 @@ body {
   margin-left: -9px;
   padding: 0 20px;
   bottom: 0;
-  }
+}
 
-  .loginpagefooter {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 5px;
-    font-family: Helvetica;  
-    background-image: url('/public/img/codecoveheaderblank.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: -9px;
-    margin-top: 757px;
-    padding: 0 20px;
-    bottom: 0;
-  }
-    
-  .returnlink {
-    text-align: center;
-  }
-  
-  .getstartedbtn {
-    font-size: 2vw;
-    text-align: center;
-    margin-top: 3%;
-    margin-left: 42%;
-    font-family: Helvetica;
-    font-weight: bold;
-    text-decoration: none;
-    border: 3px solid black; 
-    color: black; 
-    padding: 10px 20px; 
-    transition: all 0.3s ease-in-out;
-    position: relative;
-  }
-  
-  .getstartedbtn:hover {
-    color: #aeeaf3;
-    border-color: #aeeaf3; 
-    cursor: pointer;
-    background-position: 0;
-    background-color: black;
-  }
-  
-  .getstartedbtn:hover::before {
-    width: 100%;
-  }
-  
-  .landing-page {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-  }
+.loginpagefooter {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: Helvetica;
+  background-image: url('/public/img/codecoveheaderblank.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -9px;
+  margin-top: 757px;
+  padding: 0 20px;
+  bottom: 0;
+}
 
-  .coursestitle {
-    font-family: Helvetica;
-    font-size: 38px;
-    align-content: center;
-    justify-content: center;
-    margin-left: 40%;
-  }
+.returnlink {
+  text-align: center;
+}
 
-  .sign-in-link {
-    font-family: Helvetica;
-    font-weight: bold;
-    color: #1c9cbc;
-    font-size: 16px;
-  }
+.getstartedbtn {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 42%;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid black;
+  color: black;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
 
-  .authentication-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 9%;
-    height: 100%; 
-  }
+.getstartedbtn:hover {
+  color: #aeeaf3;
+  border-color: #aeeaf3;
+  cursor: pointer;
+  background-position: 0;
+  background-color: black;
+}
 
-  @media screen and (prefers-reduced-motion: no-preference) {
-    html {
-      scroll-behavior: smooth;
-    }
-  }
+.getstartedbtn:hover::before {
+  width: 100%;
+}
 
+.landing-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.coursestitle {
+  font-family: Helvetica;
+  font-size: 38px;
+  align-content: center;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+.sign-in-link {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #1c9cbc;
+  font-size: 16px;
+}
+
+.authentication-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9%;
+  height: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.create-tutorial-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  margin-top: 2%;
+  padding: 20px;
+  background-color: #E8FDFF;
+  border: 2px solid #1c9cbc;
+  border-radius: 5px;
+  font-family: Helvetica;
+  color: inherit;
+}
+
+.create-tutorial-form label {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.create-tutorial-form input,
+.create-tutorial-form textarea,
+.create-tutorial-form select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border: 2px solid #1c9cbc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.create-tutorial-form select {
+  width: 10%;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid #1c9cbc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.create-tutorial-form button {
+  background-color: azure;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 3px solid black;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.create-tutorial-form button:hover {
+  color: #aeeaf3;
+  background-color: black;
+  border-color: #aeeaf3;
+}
+
+.create-tutorial-form button:hover::before {
+  width: 100%;
+}
+
+.formlabel {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.formlabel input {
+  margin-top: 5px;
+}
+
+.tutorialtitle {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 7%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+
+.tutorial-container {
+  text-align: center;
+}
+
+.tutorial-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  margin: 20px auto;
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.quiz-results {
+  margin-top: 20px;
+}
+
+.quiz-results h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quiz-results p {
+  font-size: 18px;
+}
+
+.quiz-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-results li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333; /* default text color */
+}
+
+.quiz-results li.pass {
+  color: green;
+}
+
+.quiz-results li.fail {
+  color: red;
+}
+
+
+/* Pages.css */
+.page-container {
+  background-color: white;
+  border: 2px solid #1c9cbc;
+  padding: 40px;
+  margin-top: 2%;
+  border-radius: 5px;
+  color: inherit;
+  height: 100%;
+}
+
+.page-title {
+  font-size: 2rem;
+}
+
+.completed-tutorials-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.completed-tutorial-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 3px solid black;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: #e8fdff;
+  border: 2px solid #1c9cbc;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.completed-tutorial-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  /* Enlarges the card on hover */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tutorial-name {
+  margin-bottom: 14px;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.tutorial-description {
+  color: #555;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  justify-content: center;
+}
+
+.tutorial-detail {
+  padding: 10px 0;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+/* Add more styles as needed */
+
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

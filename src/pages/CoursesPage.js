@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Courses from "../data/CoursesData";
 import '../css/Courses.css';
-import CommonLayout from "../components/CommonLayout";
+import NavBar from "../components/NavBar";
 
 // Filter courses by comparing course name to drop down menu options
 const CoursesPage = () => {
@@ -34,16 +34,24 @@ const CoursesPage = () => {
 
   return (
     <>
-    <CommonLayout />
-      <div className="course-dropdown-container">
-        <select onChange={handleFilterChange} className="course-dropdown">
-          <option value="all">All Courses</option>
-          <option value="frontend">Frontend</option>
-          <option value="backend">Backend</option>
-          <option value="database">Database</option>
-          <option value="framework">Framework</option>
-          <option value="other">Other</option>
-        </select>
+      <NavBar />
+      <div className="courses-buttons-container">
+        <Link className="courses-button" to="/createTutorialPage">
+          Create Tutorial
+        </Link>
+        <div className="course-dropdown-container">
+          <select onChange={handleFilterChange} className="course-dropdown">
+            <option value="all">All Courses</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="database">Database</option>
+            <option value="framework">Framework</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <Link className="courses-button" to="/completedtutorials">
+          My Completed Tutorials
+        </Link>
       </div>
 
       <div className="courses-container">

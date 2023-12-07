@@ -7,7 +7,7 @@ function CustomUserButton() {
 
   return (
     // Change to valid url when deploying to cloud
-    <UserButton afterSignOutUrl="http://localhost:3000"
+    <UserButton afterSignOutUrl="https://code-cove-373f38802ffd.herokuapp.com/"
     appearence>
       {user?.signedIn ? <button>Sign Out</button> : null}
     </UserButton>

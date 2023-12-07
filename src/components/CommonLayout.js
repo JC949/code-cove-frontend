@@ -7,9 +7,9 @@ import NavBar from "./NavBar";
 const CommonLayout = ({ children }) => {
   return (
     <div className="common-layout">
-        <NavBar />
-        <div className="content">{children}</div>
-        <Footer />
+      <NavBar />
+      <div className="content">{children}</div>
+      <Footer />
     </div>
   );
 };

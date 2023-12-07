@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
+import { TutorialProvider } from './components/TutorialContext'; // Adjust the import path
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <TutorialProvider>
     <App />
+    <ToastContainer />
+    </TutorialProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
