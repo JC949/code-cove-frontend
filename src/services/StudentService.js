@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// Change to proper url when deployed to cloud
-const STUDENTS_REST_API_URL = 'http://localhost:8080/api/students';
+const STUDENTS_REST_API_URL = 'https://code-cove-frontend-858cb26df428.herokuapp.com/api/students';
 
 export const getstudents = async () => {
     try {
@@ -14,3 +13,5 @@ export const getstudents = async () => {
       throw error;
     }
   }
+
+  
