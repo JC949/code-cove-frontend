@@ -1,9 +1,12 @@
-// QuizComponent.jsx
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/Pages.css';
 import '../css/NavBar.css';
+import log4js from 'log4js';
+
+// Get logger for the current module (QuizComponent)
+const logger = log4js.getLogger('QuizComponent');
 
 const QuizComponent = ({ questions, onSubmit }) => {
   const [userAnswers, setUserAnswers] = useState(new Array(questions.length).fill(-1));
@@ -32,20 +35,23 @@ const QuizComponent = ({ questions, onSubmit }) => {
         const questionText = questions[index].text;
         const userAnswerText = String.fromCharCode(65 + userAnswer);
         const correctAnswerText = String.fromCharCode(65 + correctAnswer);
-  
-        // Log the details for review
-        console.log(`Question: ${questionText}`);
-        console.log(`Your answer: ${userAnswerText}`);
-        console.log(`Correct answer: ${correctAnswerText}`);
+
+        // Log details for review
+        logger.debug(`Question: ${questionText}`);
+        logger.debug(`Your answer: ${userAnswerText}`);
+        logger.debug(`Correct answer: ${correctAnswerText}`);
       }
-  
+
       return isCorrect ? count + 1 : count;
     }, 0);
 
     if (passed) {
+      // Log quiz passed details
+      logger.info(`Quiz passed with a score of ${score.toFixed(2)}% (${correctCount} out of ${questions.length})`);
+      // Display toast success message
       toast.success(`Congratulations! You passed with a score of ${score.toFixed(2)}% (${correctCount} out of ${questions.length}).`, {
         position: "top-center",
-        autoClose: 5000, // 5 seconds
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -53,9 +59,12 @@ const QuizComponent = ({ questions, onSubmit }) => {
         fontSize: '16px' 
       });
     } else {
+      // Log quiz failed details
+      logger.warn(`Quiz failed with a score of ${score.toFixed(2)}% (${correctCount} out of ${questions.length})`);
+      // Display toast error message
       toast.error(`You failed the quiz with a score of ${score.toFixed(2)}% (${correctCount} out of ${questions.length}). Please try again to receive your completion certificate.`, {
         position: "top-center",
-        autoClose: 5000, // 5 seconds
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -69,14 +78,26 @@ const QuizComponent = ({ questions, onSubmit }) => {
     if (event && event.preventDefault) {
       event.preventDefault();
     }
-  
+
     const score = calculateScore();
     const passed = score >= 70;
+
+    // Log quiz submission details
+    logger.debug('Submitting quiz:');
+    logger.debug('User Answers:', userAnswers);
+    logger.debug('Correct Answers:', questions.map((q) => q.correctAnswer));
+    
     showAlert(passed, score);
-  
-    // You can also pass the score to the parent component if needed
+
+    // Log quiz submit success
+    logger.info('Quiz submitted successfully.');
+
+    // Call the onSubmit function with relevant details
     onSubmit({ score, userAnswers, correctAnswers: questions.map((q) => q.correctAnswer) });
   };
+
+  // Log component mount
+  logger.info('QuizComponent mounted.');
 
   return (
     <form onSubmit={handleQuizSubmit}>

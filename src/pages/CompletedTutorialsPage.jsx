@@ -11,8 +11,8 @@ const CompletedTutorialsPage = () => {
       name: 'Inheritance with Java',
       description: 'Learn the basics of the Object Oriented Programming Pillar: Inheritance with Java.',
       difficulty: 2,
-      totalQuestions: 7,
-      correctQuestions: 6,
+      totalQuestions: 2,
+      correctQuestions: 2,
     },
     // Add more completed tutorials as needed
   ];
