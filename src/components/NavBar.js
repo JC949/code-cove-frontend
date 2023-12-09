@@ -20,7 +20,7 @@ function NavBar() {
       <nav className="nav-links">
         <ul>
           <li>
-            <CustomLink href="/courses">Browse Courses</CustomLink>
+            <CustomLink href="/courses">Browse Tutorials</CustomLink>
           </li>
           {!user ? (
             <li>

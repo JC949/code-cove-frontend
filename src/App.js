@@ -9,7 +9,6 @@ import CreateTutorialPage from "./pages/CreateTutorialPage";
 import ShowTutorialPage from "./pages/ShowTutorialPage";
 import CompletedTutorialsPage from "./pages/CompletedTutorialsPage";
 
-
 /* Define pub key in variable, make sure clerk provider is called in App.js
 so we can use clerk features throughout app without needing to re call */
 function App() {
