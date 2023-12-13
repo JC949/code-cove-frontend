@@ -2,15 +2,14 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useClerk, SignedOut } from '@clerk/clerk-react';
-import courses from '../data/CoursesData';
-import '../css/Pages.css';
-import '../css/NavBar.css';
-import CreateTutorialForm from '../components/CreateTutorialForm';
-import NavBar from '../components/NavBar';
+import courses from '../../data/CoursesData';
+import '../../css/Pages.css';
+import CreateTutorialForm from '../../components/tutorial-components/CreateTutorialForm';
+import NavBar from '../../components/nav-components/NavBar';
 import { v4 as uuidv4 } from 'uuid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useTutorial } from '../components/TutorialContext'; // Import useTutorial hook
+import { useTutorial } from '../../components/tutorial-components/TutorialContext'; // Import useTutorial hook
 
 
 const CourseDetailsPage = () => {

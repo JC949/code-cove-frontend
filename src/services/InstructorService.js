@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Change to proper url when deployed to cloud
-const INSTRUCTORS_REST_API_URL = 'http://localhost:8080/api/instructors';
+const INSTRUCTORS_REST_API_URL = 'https://code-cove-frontend-858cb26df428.herokuapp.com/api/instructors';
 
 export const getInstructors = async () => {
     try {

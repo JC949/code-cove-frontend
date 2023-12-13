@@ -1,7 +1,6 @@
 // TutorialPage.jsx
 import React, { useState } from 'react';
-import '../css/Pages.css';
-import '../css/Courses.css';
+import '../../css/Courses.css';
 import QuizComponent from '../components/QuizComponent';
 
 const TutorialPage = ({ tutorialData }) => {

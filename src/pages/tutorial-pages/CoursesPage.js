@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Courses from "../data/CoursesData";
-import '../css/Courses.css';
-import NavBar from "../components/NavBar";
+import Courses from "../../data/CoursesData";
+import '../../css/Courses.css';
+import NavBar from "../../components/nav-components/NavBar";
 
 // Filter courses by comparing course name to drop down menu options
 const CoursesPage = () => {

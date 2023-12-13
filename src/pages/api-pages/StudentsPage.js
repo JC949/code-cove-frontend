@@ -1,6 +1,6 @@
 import React from 'react';
 import StudentComponent from '../components/StudentComponent';
-import '../css/Pages.css';
+import '../../css/Pages.css';
 import CommonLayout from '../components/CommonLayout';
 import { ClerkProvider } from '@clerk/clerk-react';
 

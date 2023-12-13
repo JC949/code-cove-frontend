@@ -318,10 +318,8 @@ button {
 
 /* Pages.css */
 .page-container {
-  background-color: white;
   border: 2px solid #1c9cbc;
-  padding: 40px;
-  margin-top: 2%;
+  padding: 20px;
   border-radius: 5px;
   color: inherit;
   height: 100%;

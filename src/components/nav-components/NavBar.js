@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import '../css/NavBar.css';
-import '../css/Images.css';
-import CustomUserButton from './CustomUserButton';
-import CustomLink from './CustomLink';
+import '../../css/NavBar.css';
+import '../../css/Images.css';
+import CustomUserButton from '../clerk-components/CustomUserButton';
+import CustomLink from '../clerk-components/CustomLink';
 import { useClerk } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import InstructorComponent from '../components/InstructorComponent';
-import '../css/Pages.css';
+import '../../css/Pages.css';
 import CommonLayout from '../components/CommonLayout';
 import { ClerkProvider } from '@clerk/clerk-react';
 

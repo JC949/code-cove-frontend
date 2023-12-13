@@ -1,10 +1,9 @@
 // CreateTutorialPage.jsx
 import React from 'react';
-import NavBar from '../components/NavBar';
-import CreateTutorialForm from '../components/CreateTutorialForm';
+import NavBar from '../../components/nav-components/NavBar';
+import CreateTutorialForm from '../../components/tutorial-components/CreateTutorialForm';
 import { useNavigate } from 'react-router-dom';
-import '../css/Pages.css';
-import '../css/NavBar.css';
+import '../../css/Pages.css';
 
 // CreateTutorialPage.jsx
 

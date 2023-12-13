@@ -1,4 +1,4 @@
-import '../css/NavBar.css';
+import '../../css/NavBar.css';
 
 // Component to display copyright footer
 function Footer() {

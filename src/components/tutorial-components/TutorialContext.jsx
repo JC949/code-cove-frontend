@@ -1,7 +1,6 @@
 // TutorialContext.js
 import { createContext, useContext, useReducer } from 'react';
-import '../css/Pages.css';
-import '../css/NavBar.css';
+import '../../css/Pages.css';
 
 const TutorialContext = createContext();
 

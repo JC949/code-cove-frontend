@@ -159,10 +159,10 @@
 .courses-buttons-container {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin: 20px;
   align-items: flex-end;
   /* Align items at the flex-end (bottom) */
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .course-dropdown-container {

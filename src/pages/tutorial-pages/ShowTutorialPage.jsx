@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import NavBar from '../components/NavBar';
-import '../css/Pages.css';
-import '../css/NavBar.css';
-import QuizComponent from '../components/QuizComponent';
+import NavBar from '../../components/nav-components/NavBar';
+import '../../css/Pages.css';
+import QuizComponent from '../../components/tutorial-components/QuizComponent';
 
 const ShowTutorialPage = () => {
   const { state } = useLocation();

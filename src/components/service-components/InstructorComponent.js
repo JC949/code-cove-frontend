@@ -1,5 +1,5 @@
 import React from 'react';
-import getInstructors from '../services/InstructorService';
+import getInstructors from '../../services/InstructorService';
 
 // Receive a response from services folder for each Instructor and display their usernames
 class InstructorComponent extends React.Component {

@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "./Footer";
-import "../css/NavBar.css";
 import NavBar from "./NavBar";
 
 // Component for both nav bar and footer implementation

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'; // Import uuid
-import '../css/Pages.css';
-import '../css/NavBar.css';
+import '../../css/Pages.css';
 
 // CreateTutorialForm component
 const CreateTutorialForm = ({ onSubmit }) => {
