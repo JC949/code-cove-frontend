@@ -27,6 +27,12 @@ function NavBar() {
               <Link to="/login">Log In</Link>
             </li>
           ) : null}
+          <li>
+          <CustomLink href="/about">About Us</CustomLink>
+          </li>
+          <li>
+          <CustomLink href="/contact">Contact Us</CustomLink>
+          </li>
           <a
             className="discord-link"
             href="https://discord.gg/bCBwp9qm"
