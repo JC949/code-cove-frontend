@@ -17,6 +17,7 @@ function App() {
   }
 
   const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
+  console.log("Clerk Publishable Key:", clerkPubKey);
 
   return (
     <>

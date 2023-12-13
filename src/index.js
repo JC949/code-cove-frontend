@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
-import { TutorialProvider } from './components/TutorialContext'; // Adjust the import path
+import { TutorialProvider } from './components/TutorialContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <TutorialProvider>
-\    <App />
+    <App />
     <ToastContainer />
     </TutorialProvider>
     </BrowserRouter>
